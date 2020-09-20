@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eed</title>
+</head>
+<body>
+<style type="text/css">
+        .top{
+            /* 设置宽度高度背景颜色 */
+            height: 50px;
+            width:100%;
+            background:rgb(189, 181, 181);
+            position: fixed; /*固定在顶部*/
+            top: 0;/*离顶部的距离为0*/
+        }
+        .top ul{
+            /* 清除ul标签的默认样式 */
+            width: 180%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .top li {
+            float:left; /* 使li内容横向浮动，即横向排列  */
+            margin-right:10px;  /* 两个li之间的距离*/
+        }
+
+        .top li a{
+           /* 设置链接内容显示的格式*/
+            display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none; /* 去除下划线 */
+        }
+        .top li a:hover{
+            /* 鼠标选中时背景变为黑色 */
+            background-color: #111;
+        }
+       </style>
+<div style="height: 100px"></div>
+<div class="top">
+                <ul>
+                    <li><a href="/">农业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/1">Map-世界农业女性就业率</a></li>
+                    <li><a href="/2">服务业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/3">Map-服务业女性就业率</a></li>
+                    <li><a href="/4">工业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/5">Map-工业女性就业率</a></li>
+                    <li>
+                      </ul>
+            </div>
+
+       {{ the_sym|safe }}
+<br>
+<h1>世界服务业女性分析</h1>
+<p>服务业是劳动密集型产业，能提供大量的就业岗位，特别是能提供大量适合女性就业的岗位。加快发展生活服务业对于繁荣就业市场、促进女性就业有着不可替代的积极作用。</p>
+<p>在折线图中，不管是哪个国家，他们的服务业都有些许的增长，也表明了未来服务业的发展前景很好。</p>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>End</title>
+</head>
+<body>
+<style type="text/css">
+        .top{
+            /* 设置宽度高度背景颜色 */
+            height: 50px;
+            width:100%;
+            background:rgb(189, 181, 181);
+            position: fixed; /*固定在顶部*/
+            top: 0;/*离顶部的距离为0*/
+        }
+        .top ul{
+            /* 清除ul标签的默认样式 */
+            width: 180%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .top li {
+            float:left; /* 使li内容横向浮动，即横向排列  */
+            margin-right:10px;  /* 两个li之间的距离*/
+        }
+
+        .top li a{
+           /* 设置链接内容显示的格式*/
+            display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none; /* 去除下划线 */
+        }
+        .top li a:hover{
+            /* 鼠标选中时背景变为黑色 */
+            background-color: #111;
+        }
+       </style>
+<div style="height: 100px"></div>
+<div class="top">
+                <ul>
+                    <li><a href="/">农业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/1">Map-世界农业女性就业率</a></li>
+                    <li><a href="/2">服务业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/3">Map-服务业女性就业率</a></li>
+                    <li><a href="/4">工业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/5">Map-工业女性就业率</a></li>
+                    <li>
+                      </ul>
+            </div>
+
+       {{ the_sym|safe }}
+<br>
+<h1>世界农业女性分析</h1>
+<p>从上面的地图，我们可以明显看出：</p>
+<p>乍得、莫桑比克和布隆迪，这三个国家是世界农业女性就业率在80%以上的，且长期处于这个区间的农业国。这三个国家主要是战乱，贫穷的原因，无法自由发展其他产业，也导致其国家的农业女性的就业率居高不下。</p>
+<p>总体上看，亚、非两洲附近的国家女性农业就业占比较大，主要是由于贫穷和科技发展较差；而北美洲、南美洲和大洋洲附近的经济发达国家，多采用机器运作，所以农业女性占比极低</p>
+<p>从时间轴上看，国家的农业女性就业率并无明显变化，说明农业是支撑国民经济建设与发展的基础产品。</p>
+{{ the_sym|safe }}
+</body>
+</html>

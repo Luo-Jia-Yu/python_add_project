@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>End</title>
+</head>
+<body>
+<style type="text/css">
+        .top{
+            /* 设置宽度高度背景颜色 */
+            height: 50px;
+            width:100%;
+            background:rgb(189, 181, 181);
+            position: fixed; /*固定在顶部*/
+            top: 0;/*离顶部的距离为0*/
+        }
+        .top ul{
+            /* 清除ul标签的默认样式 */
+            width: 180%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .top li {
+            float:left; /* 使li内容横向浮动，即横向排列  */
+            margin-right:10px;  /* 两个li之间的距离*/
+        }
+
+        .top li a{
+           /* 设置链接内容显示的格式*/
+            display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none; /* 去除下划线 */
+        }
+        .top li a:hover{
+            /* 鼠标选中时背景变为黑色 */
+            background-color: #111;
+        }
+       </style>
+<div style="height: 100px"></div>
+<div class="top">
+                <ul>
+                    <li><a href="/">农业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/1">Map-世界农业女性就业率</a></li>
+                    <li><a href="/2">服务业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/3">Map-服务业女性就业率</a></li>
+                    <li><a href="/4">工业女性就业(占女性就业百分比)</a></li>
+                    <li><a href="/5">Map-工业女性就业率</a></li>
+                    <li>
+                      </ul>
+            </div>
+<h1>世界工业女性分析</h1>
+<p>从世界工业女性分析图（占百分比）和Map图可以得出，单从工业女性就业率来看，中国已经位居世界第一了，毕竟这些年中国接了大量的外国工业，女性可以帮助完成很多简单的手工艺制品。而对于美国，德国，日本等工业大国来说，他们已经掌握了大量的高新科技，可以帮助工人完成工作，这也就导致了工业女性劳动力的需求大大降低。</p>
+       {{ the_sym|safe }}
+
+<br>
+<h2>世界女性就业分析总结</h2>
+<h3>经济发展为第三产业兴盛和女性就业提供了良好的环境。</h3>
+<h3>一些人口过少的国家和地区经济急速发展，造成劳动力短缺，需全民充分就业。这就给女性就业提供了机会。另外第三产业比较适合女性特点，它的兴盛为女性提供了广阔的就业领域。当然第三产业门类有很多，对就业者有一定的素质要求，因此对女性来说既是机遇，又是挑战！</h3>
+{{ the_sym|safe }}
+</body>
+</html>
