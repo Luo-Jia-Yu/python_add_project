@@ -2,7 +2,7 @@
 
 - [Github项目链接](https://github.com/Luo-Jia-Yu/python_add_project)
 
-- [PythonAnyWhere链接](http://ldfckk.pythonanywhere.com/)
+- [PythonAnyWhere部署链接](http://ldfckk.pythonanywhere.com/)
 
 ---------------------------------------------------------------------------
 
